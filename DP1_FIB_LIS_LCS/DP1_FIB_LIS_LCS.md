@@ -10,9 +10,12 @@ We'll start with the toy example, computing Fibonacci numbers, to illustrate the
 
 Given an integer n, we're going to look at an algorithm for generating the n Fibonacci number. This will be a very simple algorithm, but it will illustrate the idea of dynamic programming and then, we'll look at dynamic programming in general; the techniques for designing a dynamic programming algorithm and we'll look at some more sophisticated examples. Recall the Fibonacci numbers are the following sequence:
  
-$$0, 1, 1, 2, 3, 5, 8,13, 21, 34, \text{ and so on}$$
+$$
+0, 1, 1, 2, 3, 5, 8,13, 21, 34, \text{ and so on}
+$$
  
-There's a simple recursive formula that defines the Fibonacci numbers. 
+There's a simple recursive formula that defines the Fibonacci numbers.
+
 $$
 F_0 = 0\\
 F_1 = 1 \\
@@ -46,6 +49,7 @@ Fib1(n):
 This will be our first attempt then we'll have a second successful attempt for efficiently computing the Fibonacci numbers. Recall the input to our algorithm is a non-negative integer n, and the output is the Nth Fibonacci number or more precisely actually the n plus first Fibonacci number if you're keeping track of the indices. First, we'll deal with the base cases. The first two Fibonacci numbers are zero and one. In general, we'll utilize the recursive definition of the Fibonacci numbers. We will recursively compute the n minus first, and n minus second Fibonacci number. And we'll return the sum of those two. This completes the definition of our algorithm. 
 
 Now, let's take a look at the running time of our algorithm. To analyze the running time of our algorithm, let's create a function T of n which denotes the number of steps of our algorithm and an input of size n.
+
 $$
 \text{Let $T(n)$ = \# steps for Fib1(n)}
 $$
@@ -158,6 +162,7 @@ Now, let's follow the first step in our recipe. We want to define the sub proble
 Recall, our subproblem definition is $L(i)$, is the length of the longest increasing subsequence on the first i elements of the input, all right? And our goal is to express $L(i)$ in terms of the solution to smaller subproblems. 
 
 So, now, let's recall our earlier example. Here is our earlier example which had n=12.
+
 $$
 A = 5, 7, 4, -3, 9, 1, 10, 4, 5, 8, 9, 3
 $$
