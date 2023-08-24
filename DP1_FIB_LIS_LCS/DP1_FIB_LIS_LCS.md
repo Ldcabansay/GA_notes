@@ -14,14 +14,11 @@ $$0, 1, 1, 2, 3, 5, 8,13, 21, 34, \text{ and so on}$$
  
 There's a simple recursive formula that defines the Fibonacci numbers. 
 $$
-\begin{aligned}
-& F_0 = 0\\
-& F_1 = 1 \\
-& F_n = F_{n-1} + F_{n-2}, \text{ for } n > 1.\\
-& \text{Input: integer } n \geq0\\
-& \text{Output: $n$-th Fibonacci number } 
-
-\end{aligned}
+F_0 = 0\\
+F_1 = 1 \\
+F_n = F_{n-1} + F_{n-2}, \text{ for } n > 1.\\
+\text{Input: integer } n \geq0\\
+\text{Output: $n$-th Fibonacci number } 
 $$
 
 The first two numbers in the sequence are zero and one, and then the n-th Fibonacci number is the sum of the previous two Fibonacci numbers. We're going to take as input and non-negative integer n and our goal is to output the nth Fibonacci number. 
