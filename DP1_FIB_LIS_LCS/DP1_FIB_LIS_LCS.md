@@ -51,7 +51,7 @@ This will be our first attempt then we'll have a second successful attempt for e
 Now, let's take a look at the running time of our algorithm. To analyze the running time of our algorithm, let's create a function T of n which denotes the number of steps of our algorithm and an input of size n.
 
 $$
-\text{Let $T(n)$ = \# steps for Fib1(n)}
+\text{Let $T(n)$ = num steps for Fib1(n)}
 $$
 
 We have two basic cases first: `if n=0, return(0)` and `if n=1, return(1)` . Those each take $O(1)$ time.
